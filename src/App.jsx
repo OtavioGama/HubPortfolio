@@ -16,9 +16,8 @@ function App() {
                 </a>
             </div>
 
-            <h1>Olá, meu nome é</h1>
-            <h2>Otávio Gama</h2>
-            <h3>Desenvolvedor Web</h3>
+            <h1>Otávio Gama</h1>
+            <h2>Desenvolvedor Web</h2>
 
             <p>Aqui se encontra minha trajetória de aprendizagem de codificação.</p>
         </div>
