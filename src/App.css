@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     height: 85vh;
+    overflow-x: hidden; /* To prevent horizontal scrollbar during fadeInX */
 
     background-image: url('./assets/banner.png');
     background-size: cover;
