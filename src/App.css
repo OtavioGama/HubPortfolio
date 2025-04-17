@@ -12,10 +12,7 @@
     justify-content: center;
     height: 85vh;
     overflow: hidden;
-
-    background-image: url('./assets/banner.png');
-    background-size: cover;
-    background-position: center;
+    background: url('./assets/banner.png') center/cover no-repeat;
 }
 
 /* Background to improve readability */
@@ -39,10 +36,10 @@
 
 .fadeIn {
     opacity: 0;
-    animation: fadeInAnimation 0.6s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    animation: fadeInAnimation 0.35s cubic-bezier(0.42, 0, 0.58, 1) forwards;
 }
 .fadeIn.from-down {
-    transform: translateY(200px);
+    transform: translateY(60px);
 }
 
 .delay-1 { animation-delay: 1.05s; }
@@ -59,13 +56,13 @@
     margin: 0;
 }
 
-.banner-text h2, .banner-text h3 {
+h2, h3 {
     font-family: "Lora", serif;
     font-weight: 500;
     font-style: normal;
 }
 
-.banner-text h2 {
+h2 {
     font-size: 30px;
 }
   
@@ -81,6 +78,10 @@
     height: 100%;
     object-fit: contain;
     fill: rgba(255, 255, 255, 0.87);
+}
+
+.time-line-content h2 {
+    text-align: center;
 }
 
 @keyframes fadeInAnimation {
