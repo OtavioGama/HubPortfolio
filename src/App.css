@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     height: 85vh;
-    overflow: hidden; /* To prevent horizontal scrollbar during fadeIn */
+    overflow: hidden;
 
     background-image: url('./assets/banner.png');
     background-size: cover;
@@ -39,13 +39,7 @@
 
 .fadeIn {
     opacity: 0;
-    animation: fadeInAnimation 0.8s cubic-bezier(0.42, 0, 0.58, 1) forwards;
-}
-.fadeIn.from-left {
-    transform: translateX(-700px);
-}
-.fadeIn.from-right {
-    transform: translateX(700px);
+    animation: fadeInAnimation 0.6s cubic-bezier(0.42, 0, 0.58, 1) forwards;
 }
 .fadeIn.from-down {
     transform: translateY(200px);
@@ -54,6 +48,7 @@
 .delay-1 { animation-delay: 1.05s; }
 .delay-2 { animation-delay: 1.3s; }
 .delay-3 { animation-delay: 1.55s; }
+.delay-4 { animation-delay: 1.8s; }
 
 .banner-text h1 {
     font-family: "The Nautigal", cursive;
