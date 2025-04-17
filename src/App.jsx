@@ -40,7 +40,7 @@ function App() {
                 <ProjectCard
                     title='Primeiro'
                     image={primeiraPaginaImg}
-                    description='blablablabvlalbasblablablablalbalablalbla' 
+                    description='blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla' 
                     link={primeiraPagina}
                 />
 

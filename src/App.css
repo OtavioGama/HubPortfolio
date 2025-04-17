@@ -71,6 +71,11 @@ h2 {
     width: 40px;
     height: 40px;
     margin: 10px;
+    transition: box-shadow 0.2s ease, transform 0.12s ease;
+}
+
+.banner-links a:hover {
+    transform: translateY(-2px);
 }
   
 .banner-links svg {
@@ -80,8 +85,13 @@ h2 {
     fill: rgba(255, 255, 255, 0.87);
 }
 
+.banner-links a:hover svg {
+    filter: drop-shadow(0 4px 8px #003944);
+}
+
 .time-line-content h2 {
     text-align: center;
+    margin-bottom: 45px;
 }
 
 @keyframes fadeInAnimation {
