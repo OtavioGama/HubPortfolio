@@ -1,0 +1,58 @@
+.temaClaro .BannerImagem {
+    background-color: white;
+}
+
+.temaEscuro .BannerImagem {
+    background-color: #252525;
+    border-bottom: #393838 solid 2px;
+}
+
+.Banner {
+    display: flex;
+    padding-top: 62px;
+}
+
+.BannerImagem {
+    width: 50%;
+    text-align: center;
+    height: 80vh;
+}
+
+.BannerImagem img {
+    height: 80vh;
+}
+
+.BannerTitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-sizing: border-box;
+    padding: 0 15px;
+    height: 80vh;
+    width: 50%;
+    background-color: #fafbfc;
+}
+
+.BannerTitulo p {
+    font-size: 10px;
+    letter-spacing: 5px;
+}
+
+.BannerTitulo h1 {
+    color: #022144;
+    font-weight: 500;
+}
+
+.BannerTitulo span {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .BannerTitulo p {letter-spacing: 3px;}
+}
+
+@media (max-width: 425px) {
+    .BannerImagem {display: none;}
+    .BannerTitulo {width: 100%;}
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.lar-med, .lar-peq{
+    width: 94%;
+    margin: auto;
+    padding: 0 3%;
+}
+
+.lar-med {
+    max-width: 1024px;
+}
+
+.lar-peq {
+    max-width: 768px;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}

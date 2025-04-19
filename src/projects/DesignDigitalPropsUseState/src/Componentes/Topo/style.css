@@ -1,0 +1,44 @@
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    border-bottom: #616161 solid 2px;
+}
+
+header .temaClaro {background-color: white;}
+
+header .temaEscuro {background-color: #252525;}
+
+header .temaClaro button {background-color: white;}
+
+header .temaEscuro button {background-color: #252525;}
+
+.Topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 25px;
+    margin-left: 15px;
+}
+
+header button {
+    height: 32px;
+    width: 32px;
+
+    border-radius: 32px;
+    border: black solid 2px;
+
+    margin: 15px;
+    padding: 4px;
+
+    cursor: pointer;
+
+    box-shadow: 1px 1px 3px 0 rgb(70, 70, 70);
+}
+
+header button:active {
+    box-shadow: 1px 1px 3px 0 rgb(70, 70, 70) inset;
+}

@@ -94,6 +94,11 @@ h2 {
     margin-bottom: 45px;
 }
 
+.projects {
+    display: flex;
+    gap: 25px;
+}
+
 @keyframes fadeInAnimation {
     to {
         opacity: 1;

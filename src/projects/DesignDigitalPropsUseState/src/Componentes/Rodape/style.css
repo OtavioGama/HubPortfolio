@@ -1,0 +1,33 @@
+footer .temaClaro {
+    background-color: white;
+}
+
+footer .temaEscuro {
+    background-color: #252525;
+    padding-top: 20px;
+}
+
+.Rodape {
+    text-align: center;
+}
+
+.Rodape img {
+    max-width: 40px;
+    margin: 10px 5px;
+}
+
+.Rodape p {
+    padding: 20px 0;
+    color: #8a8fa3
+}
+
+.Rodape p span {
+    color: #ffd414;
+    font-weight: 500;
+}
+
+.redesSociais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

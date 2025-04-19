@@ -1,0 +1,29 @@
+.Card {
+    border: #d3d8ed solid 1px;
+
+    text-align: left;
+    padding: 32px 25px;
+    width: 33.33333%;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.Card p {
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.temaEscuro h3 {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .Card {width: 50%;}
+}
+
+@media (max-width: 500px) {
+    .Card {
+        width: 100%;
+        padding: 20px 10px;
+    }
+}

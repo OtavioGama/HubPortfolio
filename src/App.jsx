@@ -3,6 +3,8 @@ import ProjectCard from './components/ProjectCard';
 
 import primeiraPagina from './projects/PrimeiraPagina/index.html';
 import primeiraPaginaImg from './assets/primeiraPagina.png';
+import DesignDigital from './projects/DesignDigitalPropsUseState/index.html';
+import DesignDigitalImg from './assets/DesignDigital.png';
 
 function App() {
   return (
@@ -37,12 +39,21 @@ function App() {
 
                 <h2 className='fadeIn from-down delay-4'> Projetos </h2>
 
-                <ProjectCard
-                    title='Primeiro'
-                    image={primeiraPaginaImg}
-                    description='blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla' 
-                    link={primeiraPagina}
-                />
+                <div className='projects'>
+                    <ProjectCard
+                        title='Primeiro'
+                        image={primeiraPaginaImg}
+                        description='blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla' 
+                        link={primeiraPagina}
+                    />
+
+                    <ProjectCard
+                        title='Segundo'
+                        image={DesignDigitalImg}
+                        description='blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla' 
+                        link={DesignDigital}
+                    />
+                </div>
 
             </div>
         </section>
