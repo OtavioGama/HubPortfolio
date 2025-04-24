@@ -3,7 +3,6 @@
     min-height: 400px;
     padding: 20px;
     border-radius: 8px;
-    background-color: #1E1E1E;
     background: linear-gradient(145deg, #1a1a1a, #222222);
     border: 1px solid #2A2A2A;
     color: #E0E0E0;
@@ -68,17 +67,18 @@
     margin-bottom: 25px;
 }
 
-.projectCard a {
-    color: #fff;
+.routerLink {
+    color: #E0E0E0;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
     border: 2px solid #00363f;
     padding: 8px 16px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.projectCard a:hover {
+.routerLink:hover {
     background-color: #002930;
 }
 

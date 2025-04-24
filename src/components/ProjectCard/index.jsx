@@ -1,7 +1,8 @@
 import './styles.css';
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-function ProjectCard({ title, image, description, link }) {
+function ProjectCard({ title, image, description, path }) {
 
     // Check if the image height is greater than 230px
     const imgRef = useRef(null);
@@ -37,7 +38,7 @@ function ProjectCard({ title, image, description, link }) {
                 />
             </div>
             <p>{description}</p>
-            <a href={link}>Abrir</a>
+            <Link to={path} className='routerLink'>Abrir</Link>
         </div>
     );
 };
