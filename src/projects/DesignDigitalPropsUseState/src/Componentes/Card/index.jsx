@@ -1,12 +1,9 @@
 import React from "react";
-import './style.css';
+import styles from './style.module.css';
 
 export default function Card(props) {
-
-    let classCard = "Card " + props.tema;
-
     return (
-        <div className={classCard}>
+        <div className={`${styles['Card']} ${styles[props.tema]}`}>
             <p>{props.data}</p>
 
             <h3>{props.titulo}</h3>

@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './App.module.css';
 import { useState } from 'react';
 import Topo from './Componentes/Topo';
 import Banner from './Componentes/Banner';
@@ -7,18 +7,18 @@ import Rodape from './Componentes/Rodape';
 
 function App() {
 
-  const [temaAtual, setTemaAtual] = useState("temaClaro");
+  const [temaAtual, setTemaAtual] = useState('temaClaro');
 
   const mudarTemaAtual = () => {
-    if (temaAtual === "temaClaro") {
-      setTemaAtual("temaEscuro");
+    if (temaAtual === 'temaClaro') {
+      setTemaAtual('temaEscuro');
     } else {
-      setTemaAtual("temaClaro");
+      setTemaAtual('temaClaro');
     }
   };
 
   return (
-    <div className="App">
+    <div className={styles['App']}>
       <Topo tema={temaAtual} alterar={mudarTemaAtual} />
 
       <main>

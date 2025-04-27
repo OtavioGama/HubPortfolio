@@ -1,20 +1,22 @@
-#experiencias .temaEscuro {background-color: #393838;}
+@import url('../../App.module.css');
 
-#experiencias .temaClaro {background-color: white;}
+.experiencias .temaEscuro {background-color: #393838;}
 
-.Experiencias {
+.experiencias .temaClaro {background-color: white;}
+
+.conteudoExperiencias {
     text-align: center;
     padding: 50px 0;
 }
 
-.Experiencias h2 {
+.conteudoExperiencias h2 {
     font-size: 26px;
     margin-bottom: 40px;
     padding-bottom: 12px;
     position: relative;
 }
 
-.Experiencias h2::before {
+.conteudoExperiencias h2::before {
     position: absolute;
     content: "";
     left: 0;
@@ -26,7 +28,7 @@
     background-color: #feb633;
 }
 
-.Experiencias p {color: #8a8fa3;}
+.conteudoExperiencias p {color: #8a8fa3;}
 
 .temaEscuro h2 {
     color: #f6f8fc;

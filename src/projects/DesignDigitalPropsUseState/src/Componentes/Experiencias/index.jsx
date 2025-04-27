@@ -1,19 +1,19 @@
 import React from "react";
-import './style.css';
+import styles from './style.module.css';
 
 import Card from "../Card";
 
 export default function Experiencias(props) {
 
     return (
-        <section id="experiencias">
-            <div className={props.tema}>
-                <div className="Experiencias lar-med">
+        <section id="experiencias" className={styles['experiencias']}>
+            <div className={styles[props.tema]}>
+                <div className={`${styles['conteudoExperiencias']} ${styles['lar-med']}`}>
                     <h2>Experiências De Trabalho</h2>
 
                     <p>Há mais de 10 anos no mercado de Branding, Desing Gráfico, Criação de Sites e Marketing Digital, nos empenhamos diariamente para entregar resultados que tragam impacto aos nossos clientes.</p>
 
-                    <div className="cardsContainer">
+                    <div className={styles['cardsContainer']}>
                         <Card
                             data="JUNHO 2012 - 2016"
                             titulo="Web Designer"

@@ -1,8 +1,10 @@
-footer .temaClaro {
+@import url('../../App.module.css');
+
+.footer .temaClaro {
     background-color: white;
 }
 
-footer .temaEscuro {
+.footer .temaEscuro {
     background-color: #252525;
     padding-top: 20px;
 }

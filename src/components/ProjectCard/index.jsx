@@ -1,4 +1,4 @@
-import './styles.css';
+import styles from './style.module.css';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -27,18 +27,18 @@ function ProjectCard({ title, image, description, path }) {
     }, []);
 
     return (
-        <div className='projectCard'>
+        <div className={styles['projectCard']}>
             <h3>{title}</h3>
-            <div className='imageWrapper'>
+            <div className={styles['imageWrapper']}>
                 <img
                     ref={imgRef}
                     src={image}
                     alt='site'
-                    className={shouldScroll ? 'scrollImage' : ''}
+                    className={shouldScroll ? styles['scrollImage'] : ''}
                 />
             </div>
             <p>{description}</p>
-            <Link to={path} className='routerLink'>Abrir</Link>
+            <Link to={path} className={styles['routerLink']}>Abrir</Link>
         </div>
     );
 };

@@ -1,17 +1,19 @@
-header {
+@import url('../../App.module.css');
+
+.header {
     width: 100%;
     position: fixed;
     z-index: 1;
     border-bottom: #616161 solid 2px;
 }
 
-header .temaClaro {background-color: white;}
+.header .temaClaro {background-color: white;}
 
-header .temaEscuro {background-color: #252525;}
+.header .temaEscuro {background-color: #252525;}
 
-header .temaClaro button {background-color: white;}
+.header .temaClaro button {background-color: white;}
 
-header .temaEscuro button {background-color: #252525;}
+.header .temaEscuro button {background-color: #252525;}
 
 .Topo {
     display: flex;
@@ -24,7 +26,7 @@ header .temaEscuro button {background-color: #252525;}
     margin-left: 15px;
 }
 
-header button {
+.header button {
     height: 32px;
     width: 32px;
 
@@ -39,6 +41,6 @@ header button {
     box-shadow: 1px 1px 3px 0 rgb(70, 70, 70);
 }
 
-header button:active {
+.header button:active {
     box-shadow: 1px 1px 3px 0 rgb(70, 70, 70) inset;
 }
