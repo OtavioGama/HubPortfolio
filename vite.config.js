@@ -22,4 +22,8 @@ export default defineConfig({
   },
 
   assetsInclude: ['**/*.html'],
+
+  preview: {
+    allowedHosts: ['otaviodevhub.onrender.com']
+  },
 })
