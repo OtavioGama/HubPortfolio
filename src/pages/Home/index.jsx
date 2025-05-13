@@ -2,8 +2,6 @@ import styles from './style.module.css';
 
 import ProjectCard from '/src/components/ProjectCard';
 
-import primeiraPagina from '/src/projects/PrimeiraPagina/index.html';
-
 import primeiraPaginaImg from '/src/assets/primeiraPagina.png';
 import DesignDigitalImg from '/src/assets/DesignDigital.png';
 
@@ -45,7 +43,7 @@ function Home() {
                         title='Primeiro'
                         image={primeiraPaginaImg}
                         description='blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla' 
-                        path={primeiraPagina}
+                        path='/src/projects/PrimeiraPagina/index.html'
                     />
 
                     <ProjectCard

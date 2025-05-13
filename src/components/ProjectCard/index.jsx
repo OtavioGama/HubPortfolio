@@ -38,7 +38,9 @@ function ProjectCard({ title, image, description, path }) {
                 />
             </div>
             <p>{description}</p>
-            <Link to={path} className={styles['routerLink']}>Abrir</Link>
+            { path.endsWith('.html')
+                ? <a href={path} target='_blank' className={styles['routerLink']}>Abrir</a>
+                : <Link to={path} className={styles['routerLink']}>Abrir</Link> }
         </div>
     );
 };
