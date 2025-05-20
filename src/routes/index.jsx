@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import ScrollToTop from '../components/ScrollToTop';
+import ProjectViewer from '../components/ProjectViewer';
 
 import Home from '../pages/Home';
-import DesignDigital from '../projects/DesignDigitalPropsUseState/src/App.jsx';
+import DesignDigital from '../projects/ReactProjects/DesignDigitalPropsUseState/src/App.jsx';
 
 function MainRoutes() {
     return (
@@ -12,7 +13,8 @@ function MainRoutes() {
             
             <Routes>
                 <Route exact path='/' element={ <Home/> } />
-                <Route path='/DesignDigital' element={ <DesignDigital/> } />
+                <Route path='/ReactProjects/DesignDigital' element={ <DesignDigital/> } />
+                <Route path='/HTMLprojects/:project' element={ <ProjectViewer /> } />
             </Routes>
         </BrowserRouter>
     )

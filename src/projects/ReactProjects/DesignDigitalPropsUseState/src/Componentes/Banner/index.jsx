@@ -8,7 +8,7 @@ export default function Banner(props) {
             <div className={styles[props.tema]}>
                 <div className={styles['Banner']}>
                     <div className={styles['BannerImagem']}>
-                        <img alt="Banner" src="/DesignDigitalPropsUseState/assets/banner.png" />
+                        <img alt="Banner" src="/assetsDesignDigitalPropsUseState/assets/banner.png" />
                     </div>
 
                     <div className={styles['BannerTitulo']}>

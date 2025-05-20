@@ -43,14 +43,14 @@ function Home() {
                         title='Primeiro'
                         image={primeiraPaginaImg}
                         description='blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla' 
-                        path='/src/projects/PrimeiraPagina/index.html'
+                        path='HTMLprojects/PrimeiraPagina'
                     />
 
                     <ProjectCard
                         title='Segundo'
                         image={DesignDigitalImg}
                         description='blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla blab lablabvlalbasblab lablablalba blablablabl blabla ablabla lablalbla' 
-                        path='/DesignDigital'
+                        path='ReactProjects/DesignDigital'
                     />
                 </div>
 

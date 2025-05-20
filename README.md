@@ -8,4 +8,6 @@
 
 #Mudança para css modules
 
-#Uso do arquivo global como modules tambem e importacao dele nos css dos componentes
+#Uso do arquivo global dos projetos como modules tambem e importacao dele nos css dos componentes dos projetos
+
+#Uso do import.meta.env.DEV pra mudar endereço dos links no build

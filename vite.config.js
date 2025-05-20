@@ -1,9 +1,22 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+
+    // Using viteStaticCopy to cleanly include pure HTML projects in the final build
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'src/projects/HTMLprojects',
+          dest: '', // Copy to dist root
+        },
+      ]
+    })
+  ],
 
   server: {
     host: '0.0.0.0',
@@ -12,16 +25,6 @@ export default defineConfig({
   css: {
     devSourcemap: true
   },
-
-  build: {
-    rollupOptions: {
-      input: {
-        main: 'index.html',
-      },
-    },
-  },
-
-  assetsInclude: ['src/projects/**/*.html'],
 
   preview: {
     allowedHosts: ['otaviodevhub.onrender.com']
